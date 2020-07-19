@@ -18,11 +18,7 @@ function compareTwoStrings(first, second) {
     return 1;
   }
 
-  if ((first.length === 1) && (second.length === 1)) {
-    return 0;
-  }
-
-  if ((first.length < 2) || (second.length < 2)) {
+  if ((first.length === 1) || (second.length === 1)) {
     return 0;
   }
 
