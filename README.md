@@ -1,22 +1,22 @@
-string-similarity
+word-similarity
 =================
 
 A fork of: https://github.com/aceakash/string-similarity.
 
-Finds degree of similarity between two strings, based on [Dice's Coefficient](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient), which is mostly better than [Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance).
+Finds degree of similarity between two words, based on [Dice's Coefficient](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient), which is mostly better than [Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance).
 
 ## API
 
 The package contains only one method:
 
-### compareWords(string1, string2)
+### compareWords(word1, word2)
 
-Returns a fraction between 0 and 1, which indicates the degree of similarity between the two strings. 0 indicates completely different strings, 1 indicates identical strings. The comparison is case-sensitive.
+Returns a fraction between 0 and 1, which indicates the degree of similarity between the two words. 0 indicates completely different words, 1 indicates identical words. The comparison is case-sensitive.
 
 ##### Arguments
   
-1. string1 (string): The first string
-2. string2 (string): The second string
+1. word1 (string): The first word
+2. word2 (string): The second word
   
 Order does not make a difference.
   
@@ -27,18 +27,12 @@ Order does not make a difference.
 ##### Examples
   
 ```javascript
-stringSimilarity.compareWords('healed', 'sealed');
+wordSimilarity.compareWords('healed', 'sealed');
 // → 0.8
 
-stringSimilarity.compareWords('Olive-green table for sale, in extremely good condition.', 
-  'For sale: table in very good  condition, olive green in colour.');
-// → 0.6060606060606061
+wordSimilarity.compareWords('fRaNce', 'france');
+// → 0.2
 
-stringSimilarity.compareWords('Olive-green table for sale, in extremely good condition.', 
-  'For sale: green Subaru Impreza, 210,000 miles');
-// → 0.2558139534883721
-
-stringSimilarity.compareWords('Olive-green table for sale, in extremely good condition.', 
-  'Wanted: mountain bike with at least 21 gears.');
-// → 0.1411764705882353
+wordSimilarity.compareWords('france', 'france');
+// → 1
 ```

@@ -1,7 +1,7 @@
 {
-  "name": "string-similarity",
-  "version": "4.0.1",
-  "description": "Finds degree of similarity between strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.",
+  "name": "word-similarity",
+  "version": "1.0.0",
+  "description": "Finds degree of similarity between words, based on Dice's Coefficient, which is mostly better than Levenshtein distance.",
   "main": "src/index.js",
   "scripts": {
     "test": "jasmine --config=src/spec/support/jasmine.json",
@@ -10,9 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aceakash/string-similarity.git"
+    "url": "git://github.com/blmage/word-similarity.git"
   },
   "keywords": [
+    "words",
     "strings",
     "similar",
     "difference",
@@ -27,9 +28,9 @@
   ],
   "files": [
     "src/index.js",
-    "umd/string-similarity.min.js"
+    "umd/word-similarity.min.js"
   ],
-  "author": "Akash Kurdekar <npm@kurdekar.com> (http://untilfalse.com/)",
+  "author": "@blmage / @aceakash",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^3.4.0",

@@ -1,7 +1,7 @@
-var stringSimilarity = require('../index');
+var wordSimilarity = require('../index');
 
 describe('compareWords', () => {
-  var compareWords = stringSimilarity.compareWords;
+  var compareWords = wordSimilarity.compareWords;
 
   it('is a function', () => {
     expect(typeof compareWords).toEqual('function');
