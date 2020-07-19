@@ -3,19 +3,11 @@ module.exports = {
 };
 
 function compareWords(first, second) {
-  if (!first.length && !second.length) {
-    return 1;
-  }
-
-  if (!first.length || !second.length) {
-    return 0;
-  }
-
   if (first === second) {
     return 1;
   }
 
-  if ((first.length === 1) || (second.length === 1)) {
+  if ((first.length <= 1) || (second.length <= 1)) {
     return 0;
   }
 
