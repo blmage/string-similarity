@@ -31,7 +31,7 @@
     "umd/word-similarity.min.js"
   ],
   "author": "@blmage / @aceakash",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jasmine": "^3.5.0",
     "webpack": "^4.43.0",
