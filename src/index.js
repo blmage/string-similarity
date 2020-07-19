@@ -1,8 +1,8 @@
 module.exports = {
-  compareTwoStrings,
+  compareWords,
 };
 
-function compareTwoStrings(first, second) {
+function compareWords(first, second) {
   if (!first.length && !second.length) {
     return 1;
   }

@@ -1,10 +1,10 @@
 var stringSimilarity = require('../index');
 
-describe('compareTwoStrings', () => {
-  var compareTwoStrings = stringSimilarity.compareTwoStrings;
+describe('compareWords', () => {
+  var compareWords = stringSimilarity.compareWords;
 
   it('is a function', () => {
-    expect(typeof compareTwoStrings).toEqual('function');
+    expect(typeof compareWords).toEqual('function');
   });
 
   it('returns the correct value for different inputs:', () => {
@@ -82,7 +82,7 @@ describe('compareTwoStrings', () => {
     ];
 
     testData.forEach(test => {
-      expect(compareTwoStrings(test.first, test.second)).toBe(test.expected, test);
+      expect(compareWords(test.first, test.second)).toBe(test.expected, test);
     });
   });
 });
