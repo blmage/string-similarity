@@ -3,9 +3,6 @@ module.exports = {
 };
 
 function compareTwoStrings(first, second) {
-  first = first.replace(/\s+/g, '')
-  second = second.replace(/\s+/g, '')
-
   if (!first.length && !second.length) {
     return 1;
   }
