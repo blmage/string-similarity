@@ -3,7 +3,7 @@ word-similarity
 
 A fork of: https://github.com/aceakash/string-similarity.
 
-Finds degree of similarity between two words, based on [Dice's Coefficient](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient), which is mostly better than [Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance).
+Finds the degree of similarity between two words, based on the [Dice's Coefficient](http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient), which is mostly better than [Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance).
 
 ## API
 
@@ -11,7 +11,7 @@ The package contains only one method:
 
 ### compareWords(word1, word2)
 
-Returns a fraction between 0 and 1, which indicates the degree of similarity between the two words. 0 indicates completely different words, 1 indicates identical words. The comparison is case-sensitive.
+Returns a score between 0 and 1, which indicates the degree of similarity between the two words. 0 indicates completely different words, 1 indicates identical words. The comparison is case-sensitive.
 
 ##### Arguments
   
@@ -22,7 +22,7 @@ Order does not make a difference.
   
 ##### Returns
   
-(number): A fraction from 0 to 1, both inclusive. Higher number indicates more similarity.
+(number): A number from 0 to 1, both inclusive. A higher number indicates a greater similarity.
 
 ##### Examples
   
